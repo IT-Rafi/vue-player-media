@@ -1,3 +1,4 @@
+
 module.exports = {
   presets: [['@babel/preset-env', {
     targets: {
@@ -8,8 +9,3 @@ module.exports = {
     '@babel/plugin-transform-runtime'
   ]
 }
-
-
-
-
-

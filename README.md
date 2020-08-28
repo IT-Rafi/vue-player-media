@@ -1,8 +1,9 @@
-# Vue-player
+# vue-player-media
 
 基于 Vue 的视频播放器
 - [npm](#npm)
 - [用法](#use)
+- [flv格式说明](#explain)
 - [Example](#example)
 - [Props](#props)
 - [Methods](#methods)
@@ -13,7 +14,7 @@
 ## npm
 
 ```
-$ npm i vue-palyer -S
+$ npm install vue-player-media -S
 ```
 
 ## use
@@ -24,7 +25,7 @@ main.js:
 
 import Vue from 'vue'
 import App from './App.vue'
-import VuePlayer from 'vue-player'
+import VuePlayer from 'vue-player-media'
 Vue.use(VuePlayer)
 
 new Vue({
@@ -34,7 +35,24 @@ new Vue({
   }
 })
 ```
+## explain
+*因为flv.js本身的问题，项目中想播放flv格式视频，（我）目前采用的是这种方式
 
+使用方式：
+1把flv.js静态资源放到自己项目文件夹（flv静态资源地址：https://github.com/IT-Rafi/vue-player-media/tree/master/static）
+2.在项目中的main.js里引入
+main.js:
+```javascript
+
+window.flv = require('flv.js')
+
+new Vue({
+  el: '#app',
+  components: {
+    App
+  }
+})
+```
 ## Example
 
 template

@@ -12,9 +12,10 @@
 
 <script>
 window.Hls = require('hls.js')
-window.flv = require('../../static/flv.js')
+
 import 'dplayer/dist/DPlayer.min.css';
 import DPlayer from 'dplayer';
+
 export default {
     name:'VuePlayer',
     data(){

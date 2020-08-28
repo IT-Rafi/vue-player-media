@@ -1,6 +1,6 @@
 {
   "name": "vue-player-media",
-  "version": "1.0.0",
+  "version": "1.1.3",
   "description": "基于 Vue 的视频播放组件",
   "private": false,
   "main": "dist/index.js",
@@ -23,7 +23,8 @@
   "keywords": [
     "vue",
     "component",
-    "player"
+    "player",
+    "media"
   ],
   "author": "Rafi <https://github.com/IT-Rafi>",
   "license": "MIT",
@@ -58,6 +59,7 @@
     "commitizen": "^4.0.3",
     "conventional-changelog-cli": "^2.0.31",
     "css-loader": "^3.0.0",
+    "dplayer": "1.25.0",
     "eslint": "^6.0.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.18.0",
@@ -66,6 +68,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.3",
     "file-loader": "^4.0.0",
+    "hls.js": "^0.14.5",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^4.2.3",
     "import-http": "^0.3.1",
@@ -77,8 +80,6 @@
     "uglifyjs-webpack-plugin": "^2.1.3",
     "url-loader": "^2.0.1",
     "vue": "^2.6.10",
-    "dplayer": "1.25.0",
-    "hls.js": "^0.14.5",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.35.2",
@@ -86,5 +87,9 @@
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.8.0",
     "yargs": "^14.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "flv.js": "^1.5.0"
   }
 }
