@@ -1,6 +1,6 @@
 # vue-player-media
 
-基于 Vue 的视频播放器
+基于 Vue 的视频播放器(支持播放mp4、m3u8、swf、flv)
 - [npm](#npm)
 - [用法](#use)
 - [flv格式说明](#explain)
@@ -36,12 +36,16 @@ new Vue({
 })
 ```
 ## explain
+
 *因为flv.js本身的问题，项目中想播放flv格式视频，（我）目前采用的是这种方式
 
 使用方式：
 1把flv.js静态资源放到自己项目文件夹（flv静态资源地址：https://github.com/IT-Rafi/vue-player-media/tree/master/static）
 2.在项目中的main.js里引入
 main.js:
+
+播放器容器大小可自己设置
+
 ```javascript
 
 window.flv = require('flv.js')
